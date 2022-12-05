@@ -2,6 +2,7 @@
 import './App.css';
 import useWindowDimensions from "./component/utils/WindowDimension";
 import {Title} from "./component/Title";
+import {Navigation} from "./component/Navigation";
 
 function App() {
     const line = "Hello World";
@@ -11,7 +12,10 @@ function App() {
 
 
     return (
-        <Title windowWidth={middleX} windowHeight={middleY} line={line}/>
+        <>
+            <Title windowWidth={middleX} windowHeight={middleY} line={line}/>
+            <Navigation height={height}/>
+        </>
     );
 }
 
