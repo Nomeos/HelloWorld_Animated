@@ -1,8 +1,8 @@
 import {motion} from "framer-motion";
 import React from "react";
 
-export function Title (props) {
-    const {windowWidth, windowHeight, line} = props;
+export function Title(props) {
+    const {windowWidth, windowHeight, line, config} = props;
 
 
     return (
@@ -19,14 +19,21 @@ export function Title (props) {
             {
                 line.split("").map((letter, index) => {
                         return (
+
                             <motion.h2
                                 key={index + letter}
                                 initial={{x: -(windowWidth), y: -(windowHeight)}}
                                 animate={{x: 0, y: 0}}
-                                transition={{duration: 1, delay: 2 + index * 0.1}}
+                                transition={{duration: 1, delay: config.FIRST_ANIMATION + index * 0.1}}
                                 style={{display: "inline-block"}}
                             >
-                                {letter}
+                                <motion.h2
+                                    initial={{color: "black"}}
+                                    animate={{color: "white"}}
+                                    transition={{delay: config.SECOND_ANIMATION, duration: 1}}
+                                >
+                                    {letter}
+                                </motion.h2>
                             </motion.h2>
                         )
                     }
