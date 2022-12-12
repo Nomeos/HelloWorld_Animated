@@ -2,6 +2,7 @@ import * as React from "react";
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./MenuToggle";
+import ItemNavigation  from "./ItemNavigation";
 
 
 const sidebar = {
@@ -25,7 +26,7 @@ const sidebar = {
 };
 
 export function Navigation (props) {
-    const { height } = props;
+    const { height, config } = props;
     const [isOpen, toggleOpen] = useCycle(false, true);
     const containerRef = useRef(null);
 
@@ -37,8 +38,8 @@ export function Navigation (props) {
             ref={containerRef}
         >
             <motion.div className="background" variants={sidebar} />
-            {/*<Navigation />*/}
-            <MenuToggle toggle={() => toggleOpen()} />
+            <ItemNavigation />
+            <MenuToggle toggle={() => toggleOpen()} config={config} />
         </motion.nav>
     );
-};
+}
