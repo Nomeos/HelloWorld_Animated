@@ -82,7 +82,7 @@ export function Card(props) {
         <motion.div
             animate={Transitions[props.transition].animate}
             initial={Transitions[props.transition].initial}
-            transition={{delay: props.delay}}
+            transition={{delay: props.delay, duration: 1}}
             style={{...cardStyle, ...Cards[`${props.size}Card`]}}
         >
             <div style={{...Content.title, ...props.color}}>
