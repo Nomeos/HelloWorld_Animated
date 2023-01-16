@@ -27,7 +27,7 @@ export function Javascript() {
                         size={'large'}
                         title={"What's Javascript?"}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={0.5}
                     >
                         JavaScript is a programming language that is commonly used in web development. It was originally
@@ -39,7 +39,7 @@ export function Javascript() {
                         size={'medium'}
                         title={"How Javascript works?"}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={1}
                     >
                         JavaScript is a client-side scripting language, which means that it is executed by the client's
@@ -50,16 +50,16 @@ export function Javascript() {
                         size={'small'}
                         title={"Logo"}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={1.5}
                     >
                         <img src={"/images/javascript.png"} alt={'icon'}/>
                     </Card>
-                    {/*<Card
+                    <Card
                         size={'large'}
                         title={"Advantages"}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={1.5}
                     >
                         <ul>
@@ -81,9 +81,9 @@ export function Javascript() {
                     </Card>
                     <Card
                         size={'large'}
-                        title={"Disadvantage"}
+                        title={"Disadvantages"}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={2}
                     >
                         <ul>
@@ -105,12 +105,12 @@ export function Javascript() {
                                 (XSS) and injection attacks, if it is not written and maintained properly.
                             </li>
                         </ul>
-                    </Card>*/}
+                    </Card>
                     <Card
                         size={'medium'}
-                        title={"When to use Lua?"}
+                        title={"When to use Javascript?"}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={3}
                     >
                         <ul>
@@ -158,7 +158,7 @@ export function Javascript() {
                         size={'medium'}
                         title={'Hello World'}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={3.5}
                     >
                         <pre>
@@ -171,7 +171,7 @@ export function Javascript() {
                         size={'medium'}
                         title={'More Information'}
                         color={languageColor.titles}
-                        transition={'scale'}
+                        transition={'slide'}
                         delay={3.5}
                     >
                         <ul>
