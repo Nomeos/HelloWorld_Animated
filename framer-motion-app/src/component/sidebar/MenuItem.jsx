@@ -1,5 +1,6 @@
 import * as React from "react";
 import {motion} from "framer-motion";
+import {Link} from "react-router-dom";
 
 const variants = {
     open: {
@@ -25,7 +26,7 @@ const iconStyle = {
 
 const colors = ["#a20d01", "#D309E1", "#776081", "#ec8c35", "#f0db4f", "#000080"];
 const images = ["/images/ruby.png", "/images/csharp.png", "/images/elixir.png", "/images/java.png", "/images/javascript.png", "/images/lua.png"];
-const texts = ["Ruby", "C#", "Elixir", "Java", "Javascript", "Lua"];
+const texts = ["Ruby", "Csharp", "Elixir", "Java", "Javascript", "Lua"];
 
 export const MenuItem = ({i}) => {
     const style = {
@@ -34,17 +35,21 @@ export const MenuItem = ({i}) => {
         justifyContent: "center"
     };
     return (
-        <motion.li
-            variants={variants}
-            whileHover={{scale: 1.1}}
-            whileTap={{scale: 0.95}}
-        >
-            <div className="icon-placeholder" style={style}>
-                <img src={images[i]} alt="icon" style={iconStyle}/>
-            </div>
-            <div className="text-placeholder" style={style}>
-                <span style={{color: colors[i]}}>{texts[i]}</span>
-            </div>
-        </motion.li>
+        <Link to={"/language/" + texts[i].toLowerCase()} style={{
+            textDecoration: "none"
+        }}>
+            <motion.li
+                variants={variants}
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.95}}
+            >
+                <div className="icon-placeholder" style={style}>
+                    <img src={images[i]} alt="icon" style={iconStyle}/>
+                </div>
+                <div className="text-placeholder" style={style}>
+                    <span style={{color: colors[i], textDeco: "none"}}>{texts[i]}</span>
+                </div>
+            </motion.li>
+        </Link>
     );
 };
