@@ -16,7 +16,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Container/>}/>
-                    <Route path="/langage">
+                    <Route path="/language">
                         <Route path="ruby" element={<Ruby/>}/>
                         <Route path="javascript" element={<Javascript/>}/>
                         <Route path="elixir" element={<Elixir/>}/>
