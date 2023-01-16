@@ -1,6 +1,8 @@
 import React from "react";
 import {Card} from "../utils/Card";
 import {motion} from "framer-motion";
+import {docco} from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import SyntaxHighlighter from "react-syntax-highlighter";
 
 export function Lua() {
     const languageColor = {
@@ -97,7 +99,7 @@ export function Lua() {
                     </Card>
                     <Card
                         size={'large'}
-                        title={"Disadvantage"}
+                        title={"Disadvantages"}
                         color={languageColor.titles}
                         transition={"scale"}
                         delay={2}
@@ -159,11 +161,9 @@ export function Lua() {
                         transition={"scale"}
                         delay={3.5}
                     >
-                        <pre>
-                          <code>
-                            print("Hello, World!")
-                          </code>
-                        </pre>
+                        <SyntaxHighlighter language="lua" style={docco}>
+                            {"print(\"Hello, World!\")\n"}
+                        </SyntaxHighlighter>
                     </Card>
                     <Card
                         size={'large'}

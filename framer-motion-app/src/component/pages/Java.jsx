@@ -1,6 +1,8 @@
 import React from "react";
 import {Card} from "../utils/Card";
 import {motion} from "framer-motion";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export function Java() {
     const languageColor = {
@@ -150,12 +152,46 @@ export function Java() {
                 </Card>
                 <Card
                     size={'medium'}
-                    title={"When to use Java?"}
+                    title={"Hello World"}
                     color={languageColor.titles}
                     transition={"scale"}
                     delay={3}
                 >
-                    System.out.println("Hello, World!");
+                    <SyntaxHighlighter language="java" style={docco}>
+                        {"public class HelloWorld {\n" +
+                            "    public static void main(String[] args) {\n" +
+                            "        System.out.println(\"Hello, World!\");\n" +
+                            "    }\n" +
+                            "}\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
+                    title={"More information"}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={3}
+                >
+                    <ul>
+                        <li>
+                            Oracle's Java Tutorials: https://docs.oracle.com/en/java/
+                        </li>
+                        <li>
+                            Codecademy: https://www.codecademy.com/learn/learn-java
+                        </li>
+                        <li>
+                            Java Brains: https://www.javabrains.io/
+                        </li>
+                        <li>
+                            Coursera: https://www.coursera.org/courses?query=java
+                        </li>
+                        <li>
+                            Udemy: https://www.udemy.com/topic/java/$
+                        </li>
+                        <li>
+                            edX: https://www.edx.org/learn/java
+                        </li>
+                    </ul>
                 </Card>
             </div>
         </div>
