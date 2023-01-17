@@ -141,6 +141,60 @@ export function Ruby() {
                         </ul>
                     </Card>
                     <Card
+                        size={'small'}
+                        title={'Hello World'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={3.5}
+                    >
+                        <SyntaxHighlighter language="ruby" style={docco}>
+                            {"puts \"Hello, World!\"\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'small'}
+                        title={'Variables'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={4}
+                    >
+                        <SyntaxHighlighter language="ruby" style={docco}>
+                            {"x = 5\n" +
+                                "y = 10\n" +
+                                "puts x + y\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'medium'}
+                        title={'If Statement'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={4.5}
+                    >
+                        <SyntaxHighlighter language="ruby" style={docco}>
+                            {"x = 5\n" +
+                                "y = 10\n" +
+                                "if x > y\n" +
+                                "  puts \"x is greater than y\"\n" +
+                                "else\n" +
+                                "  puts \"x is less than or equal to y\"\n" +
+                                "end\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'small'}
+                        title={'For Loop'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={5}
+                    >
+                        <SyntaxHighlighter language="ruby" style={docco}>
+                            {"for i in 0..5\n" +
+                                "  puts i\n" +
+                                "end\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
                         size={'large'}
                         title={"When to use Ruby?"}
                         color={languageColor.titles}
@@ -180,18 +234,7 @@ export function Ruby() {
                         </ul>
                     </Card>
                     <Card
-                        size={'small'}
-                        title={'Hello World'}
-                        color={languageColor.titles}
-                        transition={"scale"}
-                        delay={3.5}
-                    >
-                        <SyntaxHighlighter language="ruby" style={docco}>
-                            {"puts \"Hello, World!\"\n"}
-                        </SyntaxHighlighter>
-                    </Card>
-                    <Card
-                        size={'medium'}
+                        size={'large'}
                         title={'More Information'}
                         color={languageColor.titles}
                         transition={"scale"}
@@ -218,6 +261,8 @@ export function Ruby() {
                             </li>
                         </ul>
                     </Card>
+
+
                 </div>
             </div>
         </>

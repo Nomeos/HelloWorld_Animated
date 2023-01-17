@@ -6,19 +6,15 @@ export function Card(props) {
     const Cards = {
         smallCard: {
             width: "200px",
-            //height: "200px",
         },
         mediumCard: {
             width: "400px",
-            //height: "200px",
         },
         largeCard: {
             width: "600px",
-            //height: "200px",
         },
         bigCard: {
             width: "100%",
-            height: "200px",
         }
     }
 

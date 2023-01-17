@@ -122,8 +122,71 @@ export function Csharp() {
                     </ul>
                 </Card>
                 <Card
-                    size={'large'}
-                    title={"When to use Lua?"}
+                    size={'medium'}
+                    title={'Hello World'}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={3.5}
+                >
+                    <SyntaxHighlighter language="c#" style={docco}>
+                        {"using System;\n" +
+                            "\n" +
+                            "class HelloWorld\n" +
+                            "{\n" +
+                            "    static void Main()\n" +
+                            "    {\n" +
+                            "        Console.WriteLine(\"Hello, World!\");\n" +
+                            "    }\n" +
+                            "}\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
+                    title={'Variables'}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={4}
+                >
+                    <SyntaxHighlighter language="c#" style={docco}>
+                        {"int myNum = 5;\n" +
+                            "double myDoubleNum = 5.99;\n" +
+                            "char myLetter = 'D';\n" +
+                            "bool myBool = true;\n" +
+                            "string myText = \"Hello\";\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
+                    title={'If Statement'}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={4.5}
+                >
+                    <SyntaxHighlighter language="c#" style={docco}>
+                        {"int time = 20;\n" +
+                            "if (time < 18) {\n" +
+                            "  Console.WriteLine(\"Good day.\");\n" +
+                            "} else {\n" +
+                            "  Console.WriteLine(\"Good evening.\");\n" +
+                            "}\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
+                    title={'For Loop'}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={5}
+                >
+                    <SyntaxHighlighter language="c#" style={docco}>
+                        {"for (int i = 0; i < 5; i++) {\n" +
+                            "  Console.WriteLine(i);\n" +
+                            "}\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'big'}
+                    title={"When to use C#?"}
                     color={languageColor.titles}
                     transition={"scale"}
                     delay={3}
@@ -158,25 +221,6 @@ export function Csharp() {
                             development using libraries like TensorFlow.NET
                         </li>
                     </ul>
-                </Card>
-                <Card
-                    size={'medium'}
-                    title={'Hello World'}
-                    color={languageColor.titles}
-                    transition={"scale"}
-                    delay={3.5}
-                >
-                    <SyntaxHighlighter language="c#" style={docco}>
-                        {"using System;\n" +
-                            "\n" +
-                            "class HelloWorld\n" +
-                            "{\n" +
-                            "    static void Main()\n" +
-                            "    {\n" +
-                            "        Console.WriteLine(\"Hello, World!\");\n" +
-                            "    }\n" +
-                            "}\n"}
-                    </SyntaxHighlighter>
                 </Card>
                 <Card
                     size={'Large'}

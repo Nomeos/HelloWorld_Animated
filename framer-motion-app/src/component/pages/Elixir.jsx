@@ -132,6 +132,57 @@ export function Elixir() {
                         </ul>
                     </Card>
                     <Card
+                        size={'small'}
+                        title={"Hello World"}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={3}
+                    >
+
+                        <SyntaxHighlighter language="elixir" style={docco}>
+                            {" IO.puts \"Hello, World!\""}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'small'}
+                        title={"Variables"}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={3}
+                    >
+                        <SyntaxHighlighter language="elixir" style={docco}>
+                            {"name = \"John\""}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'medium'}
+                        title={"If Statement"}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={3}
+                    >
+                        <SyntaxHighlighter language="elixir" style={docco}>
+                            {"if 1 > 2 do\n" +
+                            "  \"This will not be true.\"\n" +
+                            "else\n" +
+                            "  \"But this will.\"\n" +
+                            "end"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'small'}
+                        title={"For Loop"}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={3}
+                    >
+                        <SyntaxHighlighter language="elixir" style={docco}>
+                            {"for n <- 1..10 do\n" +
+                            "  IO.puts n\n" +
+                            "end"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
                         size={'large'}
                         title={"When to use Elixir?"}
                         color={languageColor.titles}
@@ -169,18 +220,6 @@ export function Elixir() {
                                 high traffic and require high-performance.
                             </li>
                         </ul>
-                    </Card>
-                    <Card
-                        size={'small'}
-                        title={"Hello World"}
-                        color={languageColor.titles}
-                        transition={"scale"}
-                        delay={3}
-                    >
-
-                        <SyntaxHighlighter language="elixir" style={docco}>
-                            {" IO.puts \"Hello, World!\""}
-                        </SyntaxHighlighter>
                     </Card>
                     <Card
                         size={'medium'}

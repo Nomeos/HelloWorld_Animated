@@ -1,6 +1,8 @@
 import React from "react";
 import {motion} from "framer-motion";
 import {Card} from "../utils/Card";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import {docco} from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 export function Javascript() {
     const languageColor = {
@@ -108,6 +110,59 @@ export function Javascript() {
                     </Card>
                     <Card
                         size={'medium'}
+                        title={'Hello World'}
+                        color={languageColor.titles}
+                        transition={'slide'}
+                        delay={3.5}
+                    >
+                        <SyntaxHighlighter language="javascript" style={docco}>
+                            {`console.log("Hello World");`}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'small'}
+                        title={'Variables'}
+                        color={languageColor.titles}
+                        transition={'slide'}
+                        delay={4}
+                    >
+                        <SyntaxHighlighter language="javascript" style={docco}>
+                            {"let name = \"John\";\n" +
+                                "let age = 31;\n" +
+                                "let isMarried = false;"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'medium'}
+                        title={'If Statement'}
+                        color={languageColor.titles}
+                        transition={'slide'}
+                        delay={4.5}
+                    >
+                        <SyntaxHighlighter language="javascript" style={docco}>
+                            {"let age = 18;\n" +
+                                "if (age > 18) {\n" +
+                                "    console.log(\"You are an adult\");\n" +
+                                "} else {\n" +
+                                "    console.log(\"You are not an adult\");\n" +
+                                "}"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'medium'}
+                        title={'For Loop'}
+                        color={languageColor.titles}
+                        transition={'slide'}
+                        delay={5}
+                    >
+                        <SyntaxHighlighter language="javascript" style={docco}>
+                            {"for (let i = 0; i < 10; i++) {\n" +
+                                "    console.log(i);\n" +
+                                "}"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'big'}
                         title={"When to use Javascript?"}
                         color={languageColor.titles}
                         transition={'slide'}
@@ -155,20 +210,7 @@ export function Javascript() {
 
                     </Card>
                     <Card
-                        size={'medium'}
-                        title={'Hello World'}
-                        color={languageColor.titles}
-                        transition={'slide'}
-                        delay={3.5}
-                    >
-                        <pre>
-                          <code>
-                            console.log("Hello, World!");
-                          </code>
-                        </pre>
-                    </Card>
-                    <Card
-                        size={'medium'}
+                        size={'large'}
                         title={'More Information'}
                         color={languageColor.titles}
                         transition={'slide'}

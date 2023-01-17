@@ -128,6 +128,57 @@ export function Lua() {
                         </ul>
                     </Card>
                     <Card
+                        size={'small'}
+                        title={'Hello World'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={3.5}
+                    >
+                        <SyntaxHighlighter language="lua" style={docco}>
+                            {"print(\"Hello, World!\")\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'medium'}
+                        title={'Variables'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={4}
+                    >
+                        <SyntaxHighlighter language="lua" style={docco}>
+                            {"local myString = \"Hello, World!\"\n" +
+                            "local myNumber = 42\n" +
+                            "local myBoolean = true\n" +
+                            "local myTable = {\"Hello\", \"World\", 42}\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'small'}
+                        title={'If Statements'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={4.5}
+                    >
+                        <SyntaxHighlighter language="lua" style={docco}>
+                            {"if myNumber == 42 then\n" +
+                            "    print(\"Hello, World!\")\n" +
+                            "end\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
+                        size={'small'}
+                        title={'For Loops'}
+                        color={languageColor.titles}
+                        transition={"scale"}
+                        delay={5}
+                    >
+                        <SyntaxHighlighter language="lua" style={docco}>
+                            {"for i = 1, 10 do\n" +
+                            "    print(\"Hello, World!\")\n" +
+                            "end\n"}
+                        </SyntaxHighlighter>
+                    </Card>
+                    <Card
                         size={'medium'}
                         title={"When to use Lua?"}
                         color={languageColor.titles}
@@ -154,17 +205,7 @@ export function Lua() {
                         </ul>
 
                     </Card>
-                    <Card
-                        size={'small'}
-                        title={'Hello World'}
-                        color={languageColor.titles}
-                        transition={"scale"}
-                        delay={3.5}
-                    >
-                        <SyntaxHighlighter language="lua" style={docco}>
-                            {"print(\"Hello, World!\")\n"}
-                        </SyntaxHighlighter>
-                    </Card>
+
                     <Card
                         size={'large'}
                         title={'More Information'}

@@ -2,7 +2,7 @@ import React from "react";
 import {Card} from "../utils/Card";
 import {motion} from "framer-motion";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import {docco} from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export function Java() {
     const languageColor = {
@@ -131,6 +131,62 @@ export function Java() {
                 </Card>
                 <Card
                     size={'medium'}
+                    title={"Hello World"}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={3}
+                >
+                    <SyntaxHighlighter language="java" style={docco}>
+                        {"public class HelloWorld {\n" +
+                            "    public static void main(String[] args) {\n" +
+                            "        System.out.println(\"Hello, World!\");\n" +
+                            "    }\n" +
+                            "}\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
+                    title={"Variables"}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={3}
+                >
+                    <SyntaxHighlighter language="java" style={docco}>
+                        {"int myNum = 5;\n" +
+                            "float myFloatNum = 5.99f;\n" +
+                            "char myLetter = 'D';\n" +
+                            "boolean myBool = true;\n" +
+                            "String myText = \"Hello\";\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
+                    title={"If Statement"}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={3}
+                >
+                    <SyntaxHighlighter language="java" style={docco}>
+                        {"if (10 > 5) {\n" +
+                            "  System.out.println(\"10 is greater than 5\");\n" +
+                            "}\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
+                    title={"For Loop"}
+                    color={languageColor.titles}
+                    transition={"scale"}
+                    delay={3}
+                >
+                    <SyntaxHighlighter language="java" style={docco}>
+                        {"for (int i = 0; i < 5; i++) {\n" +
+                            "  System.out.println(i);\n" +
+                            "}\n"}
+                    </SyntaxHighlighter>
+                </Card>
+                <Card
+                    size={'medium'}
                     title={"When to use Java?"}
                     color={languageColor.titles}
                     transition={"scale"}
@@ -149,21 +205,6 @@ export function Java() {
                             popular choice for beginners and experienced programmers alike.
                         </li>
                     </ul>
-                </Card>
-                <Card
-                    size={'medium'}
-                    title={"Hello World"}
-                    color={languageColor.titles}
-                    transition={"scale"}
-                    delay={3}
-                >
-                    <SyntaxHighlighter language="java" style={docco}>
-                        {"public class HelloWorld {\n" +
-                            "    public static void main(String[] args) {\n" +
-                            "        System.out.println(\"Hello, World!\");\n" +
-                            "    }\n" +
-                            "}\n"}
-                    </SyntaxHighlighter>
                 </Card>
                 <Card
                     size={'medium'}
