@@ -1,0 +1,12 @@
+{
+  "Animation": {
+    "FIRST_ANIMATION": 1,
+    "SECOND_ANIMATION": 4,
+    "THIRD_ANIMATION": 7
+  },
+  "Colors": {
+    "Lua": "#000080",
+    "Csharp": "#D309E1"
+
+  }
+}
