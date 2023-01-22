@@ -20,12 +20,14 @@ After that, you can install all the necessary dependencies.
 npm install
 ```
 
-
-
 ## Dependencies
 
 The project utilizes **Framer-motion** as the primary animation library, with all animations designed to be compatible with it. 
 Additionally, **React-syntax-highlighter** is used to make the code more readable and highlighted.
+
+## External Component
+### [Sidebar](https://codesandbox.io/s/framer-motion-side-menu-mx2rw?from-embed)
+The sidebar component was sourced from an external source and was modified to fit the project's needs by adjusting the color, content, icon, and links.
 
 ## Branching
 
