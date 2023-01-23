@@ -22,6 +22,11 @@ After that, you can install all the necessary dependencies.
 npm install
 ```
 
+## Run the project
+```bash
+npm run start
+```
+
 ## Dependencies
 
 The project utilizes **Framer-motion** as the primary animation library, with all animations designed to be compatible with it. 
