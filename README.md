@@ -6,6 +6,8 @@ The "HelloWorld_Animated" lists various programming languages, provides an overv
 ## Versions
 ```bash
 npm 8.3.1
+framer-motion 7.6.18
+react-syntax-highlighter 15.5.0
 ```
 
 ## Installation
